@@ -1,4 +1,4 @@
-language-tutor
-==============
+Kotlin android app
+==================
 
-Application for tutoring language 
+Do something simple to with kotlin for android
