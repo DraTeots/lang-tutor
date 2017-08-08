@@ -21,6 +21,7 @@ a.button:active {
 #title {
     margin-bottom:10px;
 }
+
 .card {
     height:161px;
     border: 1px solid #615d5d;
@@ -32,6 +33,7 @@ a.button:active {
     text-align: center;
     position: relative;
 }
+
 .card-buttons {
     text-align: left;
     margin-bottom: 10px;
@@ -45,42 +47,30 @@ h1 {
     font-weight: normal;
     font-family: 'Times New Roman', Times, serif;
     font-size: 24px;
+    margin-top: 20px;
 }
 p {
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 20px;
+    margin-top: 20px;
 }
 .content {
-    padding:auto;
-    margin:auto;
+    padding: auto;
+    margin: auto;
     width:700px;
     position:relative;
 }
 
 
-
-
-
-
-
 /* тест 2  */
-.card-buttons {
+.card-buttons2{
     text-align: left;
     margin-bottom: 10px;
     margin-left: 25px;
-    position: absolute;
-    bottom: 10px;
+    bottom:0px;
     left:10px;
+    position: absolute;
 }
-
-.column {
-    padding-left: 26em;
-    margin-top: -90px;
-}
-
-
-
-
 
 
 /* тест 3  */
@@ -109,7 +99,7 @@ p {
 
 .table {
     width: 200%; /* Ширина таблицы */
-    border-spacing: 15px; /* Расстояние между ячейками */
+    border-spacing: 20px; /* Расстояние между ячейками */
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -121,8 +111,6 @@ p {
     text-align: center;
     font-size: 16px;
 }
-
-
 
 
 /* меню  */
@@ -168,48 +156,42 @@ li a {
 
 
 
-
-
 /* поиск  */
-#search {
-    width: 230px;
+* {box-sizing: border-box;}
+form {
+    position:absolute;
+    top:0; right:0;
+    margin:5px;
+    margin-right: 15%;
+}
+input {
+    width: 200px;
     height: 25px;
-    margin-left: 900px;
-    margin-bottom: -20px;
-
-}
-
-
-#search input {
-    float: left;
-    border: none;
-}
-
-#search .input {
-    width: 183px;
-    height: 28px;
-    padding: 0 37px 1px 15px;
-    background: #EEE url(https://lh4.googleusercontent.com/-EllJnywnmlY/UAaKJYSYYMI/AAAAAAAABUU/IaRo-yUcRmc/s235/search.png) no-repeat;
-    color: #555;
-    font: 13px/28px Tahoma, Arial, sans-serif;
+    padding-left: 15px;
+    border-radius: 42px;
+    border: 2px solid #324b4e;
+    background: #dcdcdc;
     outline: none;
+    position: relative;
+    transition: .3s linear;
 }
-
-@-moz-document url-prefix() {
-    #search .input {
-        height: 27px;
-        padding-bottom: 2px;
-    }
+input:focus {
+    width: 250px;
 }
-
-/* меняем оформление поля ввода при фокусе */
-#search .input:focus {
-    background-color: #E8E8E8;
-    background-position: 0 -29px;
-    color: #333;
+button {
+    width: 42px;
+    height: 42px;
+    background: none;
+    border: none;
+    position: absolute;
+    top: -8px;
+    right: 0;
 }
-
-
+button:before{
+    content: "\f002";
+    font-family: FontAwesome;
+    color: #324b4e;
+}
 
 
 
